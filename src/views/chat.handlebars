@@ -1,0 +1,36 @@
+<div class="container">
+    <h1 class="mt-4">Chat</h1>
+    <h3>Bienvenido {{user}}</h3>
+    <form action="/chat" method="POST">
+        <div class="form-group">
+            <input type="text" class="form-control" name="user" placeholder="Tu correo" required>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="message" placeholder="Mensaje" required>
+        </div>
+        <button type="submit" class="btn btn-success">
+            Enviar
+        </button>
+        <a href="/api/products" class="btn btn-danger">
+            Volver a Productos
+        </a>
+        <hr>
+    </form>
+    <div>
+        {{#each messages}}
+            <div>
+                <h5>
+                    {{user}} send:
+                </h5>
+                <strong>
+                    {{message}}
+                </strong>
+                - ({{createdAt}})
+                <a href="/chat/{{_id}}" class="btn">
+                    ❌
+                </a>
+                <hr>
+            </div>
+        {{/each}}
+    </div>
+</div>

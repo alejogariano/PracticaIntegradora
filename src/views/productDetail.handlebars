@@ -1,0 +1,54 @@
+<style>
+
+.card {
+    background-color: #f8f9fa;
+    border: 5px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: black;
+}
+
+.card-header {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+}
+
+.card-body {
+    padding: 20px;
+    background-color: rgb(40, 46, 46);
+}
+
+.card-title {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.card-text {
+    font-size: 15px;
+    color: white;
+}
+
+</style>
+
+    <div class="container mt-4">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <img src="{{product.thumbnail}}" alt="{{product.title}} thumbnail" class="card-img-top img-fluid mx-auto d-block" style="width: 350px;">
+                    <div class="card-header">
+                        Detalle del Producto
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{product.title}}</h5>
+                        <p class="card-text">{{product.description}}</p>
+                        <p class="card-text"><strong>Precio:</strong> ${{product.price}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <a href="/api/products" class="btn btn-danger btn-block">Volver</a>
+            </div>
+        </div>
+    </div>

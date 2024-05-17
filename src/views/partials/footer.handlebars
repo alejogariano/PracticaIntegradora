@@ -1,0 +1,69 @@
+<style>
+    .footerContainer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        box-shadow: 0 -4px 5px red;
+        background-color: black;
+        margin-top: 50px;
+
+        .footer1 {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 10px 0px;
+            text-align: center;
+            align-items: center;
+
+            .cajaFooter {
+                h5 {
+                    color: red;
+                    margin-bottom: 25px;
+                    font-size: 20px;
+                    align-items: center;
+                }
+
+                .redes {
+                    a {
+                        display: inline-block;
+                        text-decoration: none;
+                        width: 45px;
+                        height: 45px;
+                        line-height: 45px;
+                        color: rgb(0, 0, 0);
+                        margin-right: 10px;
+                        background-color: red;
+                        text-align: center;
+
+                        &:hover {
+                            color:white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer2 {
+            background-color: black;
+            padding: 5px 10px;
+            text-align: center;
+            color: antiquewhite;
+        }
+    }
+</style>
+
+<footer class="footerContainer">
+    <div class="footer1">
+        <div class="cajaFooter">
+            <h5>TAMBIEN NOS PODES CONTACTAR EN</h5>
+            <div class="redes">
+                <a target="_blank" href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                <a target="_blank" href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a target="_blank" href="https://www.whatsapp.com/?lang=es_LA" class="fa fa-whatsapp"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer2">
+        <small>&copy; 2024 - Todos los Derechos Reservados.</small>
+    </div>
+</footer>
